@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chikhen website</title>
+    <!-- linking css js font awesome -->
+    <link rel="stylesheet" href="x.css" />
+    <script defer src="x.js"></script>
+    <script
+      src="https://kit.fontawesome.com/85283a09ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header of the site -->
+    <header id="header">
+      <div id="header-left-div">
+        <i class="fa-solid fa-utensils header-left-div"></i>
+        <h1 class="header-left-div">Resto.</h1>
+      </div>
+      <div id="header-center-div">
+        <nav id="header-nav">
+          <a href="#">home</a>
+          <a href="#">dishes</a>
+          <a href="#">about</a>
+          <a href="#">menu</a>
+          <a href="#">rewiew</a>
+          <a href="#">order</a>
+          <a id="hide-header-menu-btn" href="#"
+            ><i class="fa-solid fa-x"></i
+          ></a>
+        </nav>
+      </div>
+      <div id="header-right-div">
+        <i id="header-hide-icon" class="fa-solid fa-list header-hide-icon"></i>
+        <i id="search_icon" class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </header>
+    <!-- search bar -->
+    <form action="" id="search-form" class="search-form">
+      <input id="search-input" placeholder="search here..." type="text" />
+      <label for="search-form"
+        ><i class="fa-solid fa-magnifying-glass"></i
+      ></label>
+    </form>
+    <!-- slider sections -->
+    <section>
+      <div id="home" class="section">
+        <div id="left-div" class="left-div">
+          <h2>first</h2>
+          <h1>Fried Chicken</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+            Amet repellendus reprehenderit itaque modi at molestias?
+          </p>
+          <button id="order-now">Order Now</button>
+        </div>
+        <div id="right-div" class="right-div">
+          <img src="chicken.jpg" alt="" />
+        </div>
+      </div>
+      <div id="kebab" class="section">
+        <div id="left-kebab" class="left-div">
+          <h2>second</h2>
+          <h1>Fried Chicken</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+            Amet repellendus reprehenderit itaque modi at molestias?
+          </p>
+          <button id="order-now">Order Now</button>
+        </div>
+        <div id="right-kebab" class="right-div">
+          <img src="chicken.jpg" data-src="chicken.jpg" alt="" />
+        </div>
+      </div>
+      <div id="soap" class="section">
+        <div id="left-soap" class="left-div">
+          <h2>third</h2>
+          <h1>Made with water</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br />
+            Amet repellendus reprehenderit itaque modi at molestias?
+          </p>
+          <button id="order-now">Order Now</button>
+        </div>
+        <div id="right-soap" class="right-div">
+          <img src="chicken.jpg" data-src="chicken.jpg" alt="" />
+        </div>
+      </div>
+    <div id="slider-dots">
+      <i id="circle1" class="fa-regular fa-circle"></i>
+      <i id="circle2" class="fa-regular fa-circle"></i>
+      <i id="circle3" class="fa-regular fa-circle"></i>
+    </div>
+  </section>
+  </body>
+</html>
