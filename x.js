@@ -41,60 +41,15 @@ search_form.addEventListener("click", function (e) {
 // imgLazy.forEach((img) => imgObserver.observe(img));
 
 // ------------slider--------------//
-const section = document.querySelectorAll(".section");
-const circle1 = document.querySelector("#circle1");
-const circle2 = document.querySelector("#circle2");
-const circle3 = document.querySelector("#circle3");
-let current = 0;
-let maxSlide = section.length;
-
-const translateX = function () {
-  section.forEach(function (sec, i) {
-    sec.style.transform = `translateX(${100 * (i - current)}%)`;
-  });
-};
-const whiteBack = function () {
-  circle1.style.backgroundColor = "#FFFFFF";
-  circle2.style.backgroundColor = "#FFFFFF";
-  circle3.style.backgroundColor = "#FFFFFF";
-};
-const blackBack = function (el) {
-  if (current == 0) {
-    whiteBack();
-    circle1.style.backgroundColor = "#000000";
-  }
-  if (current == 1) {
-    whiteBack();
-    circle2.style.backgroundColor = "#000000";
-  }
-  if (current == 2) {
-    whiteBack();
-    circle3.style.backgroundColor = "#000000";
-  }
-};
-circle1.addEventListener("click", () => {
-  current = 0;
-  blackBack();
-  translateX();
+var swiper = new Swiper(".mySwiper", {
+  cssMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  mousewheel: true,
+  keyboard: true,
 });
-circle2.addEventListener("click", () => {
-  current = 1;
-  blackBack();
-  translateX();
-});
-circle3.addEventListener("click", () => {
-  current = 2;
-  blackBack();
-  translateX();
-});
-setInterval(function () {
-  if (current == 2) {
-    current = 0;
-    translateX();
-    blackBack();
-  } else {
-    current++;
-    translateX();
-    blackBack();
-  }
-}, 5000);

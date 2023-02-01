@@ -6,7 +6,6 @@
 body {
   background-color: var(--light-gray);
   font-size: 17px;
-  overflow-x: hidden;
 }
 :root {
   --gray: rgb(100, 97, 97);
@@ -111,91 +110,39 @@ header {
   transition: 0.2s;
 }
 /* -----------slider------------- */
-.section {
-  position: absolute;
-  height: 610px;
-  display: flex;
-  margin-top: 70px;
-  padding: 35px;
-  justify-content: space-around;
-  background-color: white;
-  width: 100%;
-}
-.left-div {
-  margin-top: 90px;
-}
-.left-div h2 {
-  font-size: 1.5rem;
-  color: var(--gray);
-}
-.left-div h1 {
-  margin-top: 5px;
-  font-size: 3.5rem;
-}
-.left-div p {
-  margin-top: 10px;
-  color: var(--gray);
-  font-size: 1.1rem;
-}
-.left-div button {
-  padding: 5px;
-  box-shadow: 0 0 2px black;
-  color: var(--white);
-  margin-top: 10px;
-  background-color: black;
-  border-radius: 4px;
-}
-.left-div button {
-  cursor: pointer;
-  font-size: 1.5rem;
-  margin-top: 25px;
-  padding: 10px;
-}
-.right-div img {
-  width: 350px;
-  height: 100%;
-}
-.blur {
-  filter: blur(10px);
-  -webkit-filter: blur(5px);
-}
-.section {
-  box-shadow: 0 0 black px;
-}
-#home {
-  transform: translateX(0%);
-  transition: 1s;
-}
-#kebab {
-  transform: translateX(100%);
-  transition: 1s;
-}
-#soap {
-  transform: translateX(200%);
-  transition: 1s;
-}
-#slider-dots {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  margin-top: 650px;
-  z-index: 2;
-}
-#slider-dots i {
-  border-radius: 50%;
-  cursor: pointer;
-}
-#slider-dots i:hover {
-  background-color: gray;
-}
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
 
-#circle1 {
-  background-color: #000000;
-}
+    .swiper {
+      height: 700px;
+      top: 80px;
+    }
+    .swiper img{
+      width: 400px;
+    }
 
-
-
-
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #spagetti img{
+      width: 700px;
+    }
 
 
 
